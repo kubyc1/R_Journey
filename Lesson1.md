@@ -1,35 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>🧮 Lesson 1: Basics of R</title>
-  <style>
-    body {
-      font-family: sans-serif;
-      line-height: 1.6;
-      max-width: 800px;
-      margin: auto;
-      padding: 2em;
-    }
-    code {
-      background-color: #f5f5f5;
-      padding: 2px 5px;
-      border-radius: 4px;
-    }
-    pre {
-      background-color: #f5f5f5;
-      padding: 1em;
-      border-radius: 4px;
-      overflow-x: auto;
-    }
-    h2 {
-      border-bottom: 1px solid #ddd;
-      padding-bottom: 0.3em;
-    }
-  </style>
-</head>
-<body>
-
 <h1>🧮 Lesson 1: Basics of R</h1>
 
 <h2>🔹 Summary</h2>
