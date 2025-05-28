@@ -1,0 +1,161 @@
+title: "🧮 Lesson 1: Basics of R"
+output: html_document
+
+## 🔹 Summary
+
+In this lesson, you’ll learn how to:
+
+- Assign values to variables  
+- Understand and work with different data types (numeric, character, logical)  
+- Check and convert data types  
+- Perform arithmetic and comparisons in R  
+
+These are the foundations of R programming and essential for everything from data cleaning to modeling.
+
+---
+
+## 📘 Section 1: Variables and Assignment
+
+Variables store data so you can reuse and manipulate it. In R, assignment is done using `<-` (preferred) or `=`.
+
+```r
+# Using the assignment operator
+x <- 10            # numeric
+name <- "Alice"    # character
+is_active <- TRUE  # logical
+
+# Print values
+x
+name
+is_active
+````
+
+> Tip: Use `<-` instead of `=` for better R style.
+
+---
+
+## 📘 Section 2: Data Types in R
+
+R has several basic data types:
+
+* **Numeric**: numbers (e.g., 42, 3.14)
+* **Character**: text strings in quotes (e.g., "hello")
+* **Logical**: `TRUE` or `FALSE`
+
+```r
+# Numeric
+age <- 29
+height <- 1.75
+
+# Character
+city <- "Toronto"
+
+# Logical
+is_tall <- height > 1.8
+
+# View outputs
+age
+height
+city
+is_tall
+```
+
+---
+
+## 📘 Section 3: Type Coercion & Type Checking
+
+R tries to make all elements in a vector the same type — this is called *type coercion*. You can also check and manually convert types.
+
+```r
+# Type coercion example
+mixed <- c(1, "hello", TRUE)
+mixed  # all become characters
+
+# Type checking
+typeof(age)       # "double"
+typeof(city)      # "character"
+typeof(is_tall)   # "logical"
+
+# Logical test functions
+is.numeric(age)
+is.character(city)
+is.logical(is_tall)
+
+# Explicit type conversion
+as.numeric("5")       # 5
+as.logical(0)         # FALSE
+as.character(TRUE)    # "TRUE"
+```
+
+---
+
+## 📘 Section 4: Arithmetic and Comparison Operators
+
+### Arithmetic Operators:
+
+* `+` Addition
+* `-` Subtraction
+* `*` Multiplication
+* `/` Division
+* `^` Exponentiation
+
+```r
+a <- 5
+b <- 2
+
+sum <- a + b        # 7
+diff <- a - b       # 3
+product <- a * b    # 10
+quotient <- a / b   # 2.5
+power <- a ^ b      # 25
+
+sum
+diff
+product
+quotient
+power
+```
+
+---
+
+### Comparison Operators:
+
+* `==` equal to
+* `!=` not equal to
+* `>` greater than
+* `<` less than
+* `>=` greater than or equal
+* `<=` less than or equal
+
+```r
+a == b     # FALSE
+a != b     # TRUE
+a > b      # TRUE
+a < b      # FALSE
+a >= b     # TRUE
+a <= b     # FALSE
+```
+
+These return logical values: `TRUE` or `FALSE`.
+
+---
+
+## 🧪 Practice Challenge
+
+Try creating your own variables and testing their types.
+
+```r
+temperature <- 23.5
+weather <- "sunny"
+is_hot <- temperature > 30
+
+# Check values and types
+temperature
+typeof(temperature)
+
+weather
+typeof(weather)
+
+is_hot
+typeof(is_hot)
+```
